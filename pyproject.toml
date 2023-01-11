@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "remember-to-buy"
+version = "0.1.0"
+description = "Api para tener el control de las cosas a comprar"
+authors = ["Blas <blas.moyano@gmail.com>"]
+readme = "README.md"
+packages = [{include = "remember_to_buy"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.88.0"
+uvicorn = {extras = ["standard"], version = "^0.20.0"}
+SQLAlchemy = "^1.4.45"
+psycopg2-binary = "^2.9.5"
+alembic = "^1.9.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
